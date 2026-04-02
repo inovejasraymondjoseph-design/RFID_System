@@ -4,6 +4,9 @@
  */
 package com.mycompany.ict.d_4;
 
+import java.sql.Timestamp;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author pc
@@ -58,7 +61,7 @@ public class frmRegister extends javax.swing.JFrame {
         getContentPane().add(txtfirstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 370, 30));
 
         txtlastname.addActionListener(this::txtlastnameActionPerformed);
-        getContentPane().add(txtlastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 380, 40));
+        getContentPane().add(txtlastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 370, 40));
 
         txtSection.addActionListener(this::txtSectionActionPerformed);
         getContentPane().add(txtSection, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 480, 390, 60));
@@ -68,7 +71,15 @@ public class frmRegister extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
+Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+String formatted = timestamp.toLocalDateTime().format(formatter);
+
+System.out.println(formatted);
+
+        
+        
         String rfid_number = txtRFID.getText();
         String firstname = txtfirstname.getText();
         String lastname = txtlastname.getText();
@@ -85,7 +96,8 @@ public class frmRegister extends javax.swing.JFrame {
             .execute();
             
             javax.swing.JOptionPane.showMessageDialog(null, "Successfully Registered!");
-            new frmTimeIn().setVisible(true);
+            //new frmTimeIn().setText(true);
+              new frmTimeIn().setVisible(true);
             this.dispose();            
                   } 
         

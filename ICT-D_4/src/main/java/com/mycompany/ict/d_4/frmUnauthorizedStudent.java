@@ -8,14 +8,14 @@ package com.mycompany.ict.d_4;
  *
  * @author pc
  */
-public class frmTimeIn extends javax.swing.JFrame {
+public class frmUnauthorizedStudent extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmTimeIn.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmUnauthorizedStudent.class.getName());
 
     /**
-     * Creates new form frmTimeIn
+     * Creates new form frmUnauthorizedStudent
      */
-    public frmTimeIn() {
+    public frmUnauthorizedStudent() {
         initComponents();
     }
 
@@ -28,25 +28,17 @@ public class frmTimeIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtAM = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtAM.addActionListener(this::txtAMActionPerformed);
-        getContentPane().add(txtAM, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 350, 50));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\pc\\Documents\\Group 4 Figma\\TimeIn.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\pc\\Documents\\Group 4 Figma\\Unathorized Student.png")); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 560));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAMActionPerformed
-        
-    }//GEN-LAST:event_txtAMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,11 +62,10 @@ public class frmTimeIn extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frmTimeIn().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frmUnauthorizedStudent().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField txtAM;
     // End of variables declaration//GEN-END:variables
 }

@@ -35,7 +35,7 @@ public class frmTimeOut extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtPM.addActionListener(this::txtPMActionPerformed);
-        getContentPane().add(txtPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 480, 330, 50));
+        getContentPane().add(txtPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, 330, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\pc\\Documents\\Group 4 Figma\\TimeOut.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
